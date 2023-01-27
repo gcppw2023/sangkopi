@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <!-- 
+        Created by: GCP
+        Created on: 20211105
+        Logs: v1 20211105 - pembuatan form
+    -->
+    <head>
+        <title>Latihan Form</title>
+    </head>
+    <body>
+        <h1>Halaman Latihan Form</h1>
+        <p>Tanggal 5 November 2021</p>
+        
+        <form action="proses.php" method="get">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>
+                    <input type="text" name="nama_lengkap" value="" size="30" maxlength="50" placeholder="Nama Lengkap">
+                </td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>
+                    <input type="date" name="tgl_lahir" value="">
+                </td>
+            </tr>
+            <tr>
+                <td>Pas Foto</td>
+                <td>
+                    <input type="file" name="pas_foto" value="">
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jk" value="L"> Laki-laki
+                    <input type="radio" name="jk" value="P"> Perempuan
+                    <input type="radio" name="jk" value="u"> Unidentified
+                </td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td>
+                    <input type="checkbox" name="hobi" value="berenang"> Berenang
+                    <input type="checkbox" name="hobi" value="basket"> Basket
+                    <input type="checkbox" name="hobi" value="rebahan"> Rebahan
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>
+                    <textarea name="alamat" cols="50" rows="2" placeholder="Alamat"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Kota</td>
+                <td>
+                    <select name="kota_tinggal">
+                        <option value="jakarta">Jakarta</option>
+                        <option value="bandung">Bandung</option>
+                        <option value="pekan_baru">Pekan Baru</option>
+                        <option value="balikpapan">Balikpapan</option>
+                        <option value="lampung">Lampung</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Kemampuan<br/>Programming</td>
+                <td>
+                    <select name="kprogramming" size="3" multiple>
+                        <option value="php">PHP</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <button type="reset" name="clear">Clear</button>
+                    <button type="submit" name="submit">Save</button>
+                </td>
+            </tr>
+
+        </table>
+        </form>
+
+        <p>
+            <a href="../index.html">Kembali</a>
+        </p>
+    </body>
+</html>

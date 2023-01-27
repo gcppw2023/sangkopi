@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title>Latihan Landing page</title>
+        <link rel="stylesheet" type="text/css" href="./css/landingpage.css">
+    </head>
+    <body>
+        <section>
+            <div class="bulet"></div>
+            <header>
+                <a href="#"><img src="./multimedia/image/logokopi.png" class="logo"></a>
+
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Tentang</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </header>
+            
+            <div class="content">
+                <div class="textBox">
+                    <h2> Ini bukan hanya secangkir kopi. <br>
+                    Ini adalah <span>Sang Kopi</span></h2>
+                    <p>Kopi yang kami buat berasal dari perkebunan kopi lokal jawa barat. Dirawat oleh para petani yang sudah mendapatkan sertifikat kualitas biji kopi terbaik. Di proses secara tradisional dengan cita rasa internasional.</p>
+                    <a href="#">Lebih lengkap...</a>
+                </div>
+                <div class="imgBox">
+                    <img src="./multimedia/image/kopi1.png" class="kopi">
+                </div>
+            </div>
+
+            <div>
+                <ul class="thumb">
+                    <li><img src="./multimedia/image/kopi1.png" onclick="imgSlider('./multimedia/image/kopi1.png'); gantiWarnaBulet('#017143')"></li>
+                    <li><img src="./multimedia/image/kopi2.png" onclick="imgSlider('./multimedia/image/kopi2.png'); gantiWarnaBulet('#c03939')"></li>
+                    <li><img src="./multimedia/image/kopi3.png" onclick="imgSlider('./multimedia/image/kopi3.png'); gantiWarnaBulet('#e6a044')"></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <script type="text/javascript">
+            function imgSlider (anything){
+                document.querySelector('.kopi').src = anything;
+            }
+
+            function gantiWarnaBulet(color){
+                const buletan = document.querySelector('.bulet')
+                buletan.style.background = color;
+            }
+        </script>
+
+    </body>
+</html>
